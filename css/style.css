@@ -21,6 +21,7 @@ p {
   --color-primary-light: #ffffff;
   --font-family-brand: "Raleway", sans-serif;
   --font-family-primary: "Roboto", sans-serif;
+  --color-sprite1: #afb1b8;
 }
 
 body {
@@ -242,7 +243,7 @@ nav {
   display: flex;
   gap: 30px;
 }
-.section-team li {
+.section-team-list {
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -276,6 +277,36 @@ nav {
   margin-top: 0;
   margin-bottom: 0;
 }
+.section-team-text ul {
+  display: flex;
+  list-style: none;
+  margin-top: 16px;
+  justify-content: center;
+  gap: 10px;
+}
+.section-team-text a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-light);
+}
+.section-team-text svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-sprite1);
+}
+.section-team-text a:hover,
+.section-team-text a:focus,
+.section-team-text a:hover svg,
+.section-team-text a:focus svg {
+  background-color: var(--color-brand);
+  fill: var(--color-primary-light);
+  cursor: pointer;
+}
+
 .section-services {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -352,4 +383,98 @@ nav {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.48px;
+}
+
+.sprite-bg {
+  background: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sprite-img {
+  width: 70px;
+  height: 70px;
+}
+
+.partners {
+  padding: 94px 0;
+}
+.partners h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+.partners ul {
+  display: flex;
+  gap: 30px;
+}
+.partners li {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid var(--color-sprite1);
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners li:hover,
+.partners li:focus,
+.partners li:hover svg,
+.partners li:focus svg {
+  border-color: #2196f3;
+  fill: #2196f3;
+  cursor: pointer;
+}
+.partners svg {
+  width: 106px;
+  height: 60px;
+  fill: var(--color-sprite1);
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.join {
+  margin-left: 70px;
+}
+.join p {
+  color: var(--color-primary-light);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.join ul {
+  display: flex;
+  gap: 10px;
+}
+
+.join a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.join svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-primary-light);
+}
+.join a:hover,
+.join a:focus {
+  background-color: var(--color-brand);
+  cursor: pointer;
 }
