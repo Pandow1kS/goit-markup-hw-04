@@ -38,13 +38,19 @@
         </nav>
         <ul class="nav-header-contacts">
           <li>
-            <a class="contact-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="contact-link" href="mailto:info@devstudio.com">
+              <svg class="contact-link-icon-mail">
+                <use href="./sprite.svg#mail"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li>
             <a class="contact-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+              ><svg class="contact-link-icon-phone">
+                <use href="./sprite.svg#phone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -60,13 +66,13 @@
         </div>
       </section>
       <section class="section-second">
+        <!-- Переваги -->
         <div class="container">
-          <!-- Переваги -->
           <h2 class="hidden">Переваги</h2>
           <ul>
             <li>
               <div class="sprite-bg">
-                <svg class="sprite-img">
+                <svg class="sprite-icon">
                   <use href="./sprite.svg#antenna"></use>
                 </svg>
               </div>
@@ -78,7 +84,7 @@
             </li>
             <li>
               <div class="sprite-bg">
-                <svg class="sprite-img">
+                <svg class="sprite-icon">
                   <use href="./sprite.svg#clock"></use>
                 </svg>
               </div>
@@ -90,7 +96,7 @@
             </li>
             <li>
               <div class="sprite-bg">
-                <svg class="sprite-img">
+                <svg class="sprite-icon">
                   <use href="./sprite.svg#diagram"></use>
                 </svg>
               </div>
@@ -101,7 +107,7 @@
             </li>
             <li>
               <div class="sprite-bg">
-                <svg class="sprite-img">
+                <svg class="sprite-icon">
                   <use href="./sprite.svg#astronaut"></use>
                 </svg>
               </div>
@@ -148,7 +154,7 @@
       <section class="section-team">
         <div class="container">
           <h2>Наша команда</h2>
-          <ul>
+          <ul class="section-team-box">
             <li class="section-team-list">
               <img
                 src="./img/Igor.jpg"
@@ -159,7 +165,7 @@
               <div class="section-team-text">
                 <h3>Ігор Дем'яненко</h3>
                 <p>Product Designer</p>
-                <ul>
+                <ul class="section-team-icon">
                   <li>
                     <a href="#">
                       <svg>
@@ -201,7 +207,7 @@
               <div class="section-team-text">
                 <h3>Ольга Рєпіна</h3>
                 <p>Frontend Developer</p>
-                <ul>
+                <ul class="section-team-icon">
                   <li>
                     <a href="#">
                       <svg>
@@ -243,7 +249,7 @@
               <div class="section-team-text">
                 <h3>Микола Тарасов</h3>
                 <p>Marketing</p>
-                <ul>
+                <ul class="section-team-icon">
                   <li>
                     <a href="#">
                       <svg>
@@ -285,7 +291,7 @@
               <div class="section-team-text">
                 <h3>Михайло Єрмаков</h3>
                 <p>UI Designer</p>
-                <ul>
+                <ul class="section-team-icon">
                   <li>
                     <a href="#">
                       <svg>
@@ -373,7 +379,7 @@
 
     <!-- Підвал сторінки -->
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container footer-box">
         <div>
           <a class="footer-logo" href="./index.html"
             ><span class="accent">Web</span>Studio</a
